@@ -52,44 +52,59 @@ export default function Navbar() {
                     </nav>
                 </div>
 
-                <div className="flex lg:hidden flex-row my-4">
-                    <Link href={'/'}>
+                <div className="flex lg:hidden flex-row justify-between items-center my-4 ">
+                    <Link className="h-full" href={'/'}>
                         <button onClick={isOpen ? handleClick : nothing }>
-                            <h1 className="font-body font-bold text-3xl select-none">Woodpeckers</h1>
+                            <h1 className="relative font-body font-bold text-3xl select-none left-0 transition-all duration-300 ease-out hover:left-4">Woodpeckers</h1>
                         </button>
                     </Link>
-                    <nav className="flex flex-col content-end w-full">
+                    <nav className="flex flex-col content-end items-center h-full">
                         <button onClick={handleClick} className="flex flex-col items-end">
-                            <span className={`bg-black transition-all duration-300 ease-out h-1 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
-                            <span className={`bg-black transition-all duration-300 ease-out h-1 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`} ></span>
-                            <span className={`bg-black transition-all duration-300 ease-out h-1 w-6 rounded-sm ${isOpen ? '-rotate-45 - translate-y-1' : 'translate-y-0.5'}`}></span>
+                            <span className={`bg-black transition-all duration-300 ease-out h-1 w-8 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
+                            <span className={`bg-black transition-all duration-300 ease-out h-1 w-8 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`} ></span>
+                            <span className={`bg-black transition-all duration-300 ease-out h-1 w-8 rounded-sm ${isOpen ? '-rotate-45 - translate-y-1' : 'translate-y-0.5'}`}></span>
                         </button>
                     </nav>
                 </div>
             </div>
             
             <div className={`lg:hidden fixed z-10 w-full h-full bottom-0 top-20 transition-all duration-300 ease-out ${isOpen ? 'left-0 bg-white flex flex-col items-center' : 'w-0 h-0 top-full'}`}>
-                <div className="flex flex-col my-32 h-full w-1/2 gap-8">
-                    <Link href={'/'}>
-                        <button onClick={handleClick}>
-                            <p className="relative z-11 text-black font-body font-bold text-6xl text-nowrap w-full left-0 transition-all duration-300 ease-out hover:left-8">E-shop</p>
-                        </button>
-                    </Link>
-                    <Link href={'/'}>
-                        <button onClick={handleClick}>
-                            <p className="relative z-11 text-black font-body font-bold text-6xl text-nowrap w-full left-0 transition-all duration-300 ease-out hover:left-8">Naše tvorba</p>
-                        </button>
-                    </Link>
-                    <Link href={'/'}>
-                        <button onClick={handleClick}>
-                            <p className="relative z-11 text-black font-body font-bold text-6xl text-nowrap w-full left-0  transition-all duration-300 ease-out hover:left-8">Výroba na míru</p>
-                        </button>
-                    </Link>
-                    <Link href={'/contact'}>
-                        <button onClick={handleClick}>
-                            <p className="relative z-11 text-black font-body font-bold text-6xl text-nowrap w-full left-0 transition-all duration-300 ease-out hover:left-8">Kontakty</p>
-                        </button>
-                    </Link>
+                <div className="flex flex-col items-center h-full w-full gap-8 mt-16">
+                    <div className="flex flex-col h-full w-2/3">
+                        <Link href={'/'}>
+                            <button onClick={handleClick}>
+                                <div className="flex flex-row gap-4">
+                                    {/* <p className="relative z-11 text-black font-body font-bold text-5xl md:text-6xl text-nowrap">-</p> */}
+                                    <p className="relative z-11 text-black font-body font-bold text-5xl md:text-6xl text-nowrap w-full left-0 transition-all duration-300 ease-out hover:left-4"> E-shop</p>
+                                </div>
+                            </button>
+                        </Link>
+                        <Link href={'/'}>
+                            <button onClick={handleClick}>
+                                <div className="flex flex-row gap-4">
+                                    {/* <p className="relative z-11 text-black font-body font-bold text-5xl md:text-6xl text-nowrap">-</p> */}
+                                    <p className="relative z-11 text-black font-body font-bold text-5xl md:text-6xl text-nowrap w-full left-0 transition-all duration-300 ease-out hover:left-4"> Naše tvorba</p>
+                                </div>                            
+                            </button>
+                        </Link>
+                        <Link href={'/'}>
+                            <button onClick={handleClick}>
+                                <div className="flex flex-row gap-4">
+                                    {/* <p className="relative z-11 text-black font-body font-bold text-5xl md:text-6xl text-nowrap">-</p> */}
+                                    <p className="relative z-11 text-black font-body font-bold text-5xl md:text-6xl text-nowrap w-full left-0 transition-all duration-300 ease-out hover:left-4"> Výroba na míru</p>
+                                </div>
+                            </button>
+                        </Link>
+                        <Link href={'/contact'}>
+                            <button onClick={handleClick}>
+                                <div className="flex flex-row gap-4">
+                                    {/* <p className="relative z-11 text-black font-body font-bold text-5xl md:text-6xl text-nowrap">-</p> */}
+                                    <p className="relative z-11 text-black font-body font-bold text-5xl md:text-6xl text-nowrap w-full left-0 transition-all duration-300 ease-out hover:left-4"> Kontakty</p>
+                                </div>
+                            </button>
+                        </Link>
+
+                    </div>
                 </div>
 
             </div>

@@ -72,22 +72,22 @@ export default function Navbar() {
                 <div className="flex flex-col my-32 h-full w-1/2 gap-8">
                     <Link href={'/'}>
                         <button onClick={handleClick}>
-                            <p className="relative z-11 text-black font-body font-bold text-6xl w-full left-0 transition-all duration-300 ease-out hover:left-8">E-shop</p>
+                            <p className="relative z-11 text-black font-body font-bold text-6xl text-nowrap w-full left-0 transition-all duration-300 ease-out hover:left-8">E-shop</p>
                         </button>
                     </Link>
                     <Link href={'/'}>
                         <button onClick={handleClick}>
-                            <p className="relative z-11 text-black font-body font-bold text-6xl w-full left-0 transition-all duration-300 ease-out hover:left-8">Naše tvorba</p>
+                            <p className="relative z-11 text-black font-body font-bold text-6xl text-nowrap w-full left-0 transition-all duration-300 ease-out hover:left-8">Naše tvorba</p>
                         </button>
                     </Link>
                     <Link href={'/'}>
                         <button onClick={handleClick}>
-                            <p className="relative z-11 text-black font-body font-bold text-6xl w-full left-0 transition-all duration-300 ease-out hover:left-8">Výroba na míru</p>
+                            <p className="relative z-11 text-black font-body font-bold text-6xl text-nowrap w-full left-0  transition-all duration-300 ease-out hover:left-8">Výroba na míru</p>
                         </button>
                     </Link>
                     <Link href={'/contact'}>
                         <button onClick={handleClick}>
-                            <p className="relative z-11 text-black font-body font-bold text-6xl w-full left-0 transition-all duration-300 ease-out hover:left-8">Kontakty</p>
+                            <p className="relative z-11 text-black font-body font-bold text-6xl text-nowrap w-full left-0 transition-all duration-300 ease-out hover:left-8">Kontakty</p>
                         </button>
                     </Link>
                 </div>

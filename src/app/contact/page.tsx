@@ -7,7 +7,7 @@ export default function Contact() {
         <div className="flex flex-col items-center">
             <div className="flex flex-col max-w-8xl w-4/6 gap-16">
                 <Navbar/>
-                <h1 className="font-body font-bold text-6xl">Kontakt</h1>
+                <h1 className="font-body font-bold text-6xl">Kontakty</h1>
                 <div className="flex flex-row w-full gap-16">
                     <Image className="object-cover aspect-video w-full"
                         src={'/candle_home.jpg'}

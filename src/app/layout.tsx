@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Bebas_Neue, Open_Sans } from "next/font/google";
+import { Bebas_Neue } from "next/font/google";
 import "./globals.css";
 
 const bebasNeue = Bebas_Neue({
@@ -7,11 +7,6 @@ const bebasNeue = Bebas_Neue({
   subsets: ["latin"],
   weight: '400'
 });
-
-const openSans = Open_Sans({
-  subsets: ['latin'],
-  display: 'swap',
-})
 
 export const metadata: Metadata = {
   title: "Woodpeckers",

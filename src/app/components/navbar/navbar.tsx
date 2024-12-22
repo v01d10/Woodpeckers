@@ -4,16 +4,6 @@ import Image from "next/image";
 import React, { useState } from 'react';
 
 export default function Navbar() {
-
-    const logoStyle = {
-        borderRadius: '20%'
-    }
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
-
-    const handleMenuToggle = () => {
-        setIsMenuOpen(!isMenuOpen)
-    }
-
     return (
         <div className="flex flex-col content-center items-center w-full border-b-4 border-black">
             <div className="w-full">
@@ -28,8 +18,8 @@ export default function Navbar() {
                             Naše tvorba
                         </span>
                     </Link>
-                    <Link className="w-1/5 " href={'/'}>
-                        <Image className="h-full invert transition ease-in"
+                    <Link className="flex justify-center items-center w-1/5 min-h-full bg-black" href={'/'}>
+                        <Image className="h-full invert transition ease-in hover:scale-90"
                             src="/logo.png"
                             width={144}
                             height={144}

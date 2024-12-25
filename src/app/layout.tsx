@@ -10,7 +10,7 @@ const bebasNeue = Bebas_Neue({
 
 export const metadata: Metadata = {
   title: "Woodpeckers",
-  description: "Custom made wooden furniture...",
+  description: "Luxusní nábytek z klacků namíru",
 };
 
 export default function RootLayout({
